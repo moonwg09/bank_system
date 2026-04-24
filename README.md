@@ -68,8 +68,8 @@
 ## 📁 Presentation & Documents
 프로젝트의 기획부터 결과까지 정리된 상세 자료입니다.
 
-* 📄 [프로젝트 발표 자료 (PPT)](docs/93zOiazkkzjlgnw.pdf)
-* 📄 [프로젝트 핵심 기술 자료 (PDF)](docs/통합 계좌 관리 시스템 핵심 기술 정리 명세서.pdf)
+* 📄 [프로젝트 발표 자료 (PPT)](docs/banksystem.pdf)
+* 📄 [프로젝트 핵심 기술 자료 (PDF)](docs/)
 
 ---
 
