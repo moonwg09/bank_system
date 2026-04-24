@@ -15,18 +15,18 @@
 ---
 
 ## 📺 Demo Video
-> 시연 영상
+> 이미지를 클릭하면 유튜브 영상으로 이동합니다.
 
 | 전체 시연 영상 | 자동 이체 영상 |
 | :---: | :---: |
-| ![Demo1](https://www.youtube.com/watch?v=7mrGftvUKHs) | ![Demo2](https://www.youtube.com/watch?v=2L9ICxKN4JM) |
+| [![전체시연](http://img.youtube.com/vi/7mrGftvUKHs/0.jpg)](https://www.youtube.com/watch?v=7mrGftvUKHs) | [![자동이체](http://img.youtube.com/vi/2L9ICxKN4JM/0.jpg)](https://www.youtube.com/watch?v=2L9ICxKN4JM) |
 
 ---
 
 ## 🏗 System Architecture
 시스템의 흐름과 구성 요소를 시각화하여 설계 역량을 강조했습니다.
 
-(docs/siseutemguseoungdo.png)
+![시스템 구성도](docs/siseutemguseoungdo.png)
 
 * **Logic Layer**: Python을 활용한 비즈니스 로직 및 예외 처리 구현
 * **Data Layer**: 데이터베이스 정규화를 통한 데이터 중복 최소화 및 무결성 유지
@@ -36,7 +36,7 @@
 ## 📊 Database Design (ERD)
 19개의 테이블로 구성된 체계적인 데이터베이스 모델링입니다.
 
-(docs/Shop Member Order-2026-04-24-135108.png)
+![ERD](docs/Shop%20Member%20Order-2026-04-24-135108.png)
 
 * **주요 포인트**: 
     * `Customers`와 `Accounts`의 1:N 관계 설계를 통한 다중 계좌 지원
