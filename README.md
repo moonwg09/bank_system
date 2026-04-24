@@ -2,7 +2,6 @@
 > **안정적인 금융 트랜잭션 처리를 위한 Python 기반 뱅킹 시스템**
 
 [![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 ---
@@ -18,16 +17,16 @@
 ## 📺 Demo Video
 > 시연 영상
 
-| 메인 화면 및 계좌 관리 | 실시간 이체 프로세스 |
+| 전체 시연 영상 | 자동 이체 영상 |
 | :---: | :---: |
-| ![Demo1](docs/demo_main.gif) | ![Demo2](docs/demo_transfer.gif) |
+| ![Demo1](https://www.youtube.com/watch?v=7mrGftvUKHs) | ![Demo2](https://www.youtube.com/watch?v=2L9ICxKN4JM) |
 
 ---
 
 ## 🏗 System Architecture
 시스템의 흐름과 구성 요소를 시각화하여 설계 역량을 강조했습니다.
 
-[Image of software system architecture diagram]
+(docs/siseutemguseoungdo.png)
 
 * **Logic Layer**: Python을 활용한 비즈니스 로직 및 예외 처리 구현
 * **Data Layer**: 데이터베이스 정규화를 통한 데이터 중복 최소화 및 무결성 유지
@@ -37,20 +36,20 @@
 ## 📊 Database Design (ERD)
 19개의 테이블로 구성된 체계적인 데이터베이스 모델링입니다.
 
-[Image of entity relationship diagram for banking system]
+(docs/Shop Member Order-2026-04-24-135108.png)
 
 * **주요 포인트**: 
-    * `Users`와 `Accounts`의 1:N 관계 설계를 통한 다중 계좌 지원
+    * `Customers`와 `Accounts`의 1:N 관계 설계를 통한 다중 계좌 지원
     * 모든 금융 활동을 `Transactions` 로그 테이블에 기록하여 추적성 강화
     * 계좌 잔액의 정합성을 보장하는 트랜잭션 처리
 
 ---
 
 ## 🛠 Tech Stack
-* **Language**: Python 3.10+
-* **Database**: SQLite (Local Data Management)
-* **Modeling**: ERD Cloud / Draw.io
-* **Environment**: PyCharm / VS Code
+* **Language**: Python
+* **Database**: Oracle Database
+* **Modeling**: ERD Mermaid.ai / Draw.io
+* **Environment**: VS Code
 
 ---
 
@@ -69,8 +68,7 @@
 ## 📁 Presentation & Documents
 프로젝트의 기획부터 결과까지 정리된 상세 자료입니다.
 
-* 📄 [프로젝트 발표 자료 (PPT)](docs/bank_system_presentation.pdf)
-* 📑 [상세 요구사항 명세서](docs/requirements.md)
+* 📄 [프로젝트 발표 자료 (PPT)](docs/93zOiazkkzjlgnw.pdf)
 
 ---
 
@@ -78,7 +76,6 @@
 ```text
 ├── src/                # 소스 코드
 │   ├── main.py         # 메인 실행 파일
-│   ├── models/         # DB 모델 및 객체 정의
-│   └── services/       # 비즈니스 로직
-├── docs/               # 설계도면, ERD, 시연영상, PPT
+│   ├── db_manager.py   # DB 모델 및 객체 정의      
+├── docs/               # 시스템 구성도, ERD,  PPT
 └──
